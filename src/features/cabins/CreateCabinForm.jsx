@@ -29,8 +29,8 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             updateCabin(
                 { newCabinData: { ...data, image }, id: editId },
                 {
-                    onSuccess: (data) => {
-                        console.log(data)
+                    onSuccess: () => {
+                        // console.log(data)
                         reset()
                         onCloseModal?.()
                     },
@@ -40,8 +40,8 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             createCabin(
                 { ...data, image: image },
                 {
-                    onSuccess: (data) => {
-                        console.log(data)
+                    onSuccess: () => {
+                        // console.log(data)
                         reset()
                         onCloseModal?.()
                     },
