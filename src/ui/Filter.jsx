@@ -51,6 +51,7 @@ function Filter({ filterField, options }) {
                         active={
                             option.value === currentFilter ? 'true' : 'false'
                         }
+                        disabled={option.value === currentFilter}
                     >
                         {option.label}
                     </FilterButton>
